@@ -28,15 +28,18 @@ int main (){
     }
 
     //colocando as bombas e os tesouros de forma aleatoria
+
     for(i = 0; i < 3; i++)
         tabuleiro[rand()%11][rand()%11] = 2; //valor da bomba
     for(i = 0; i < 6; i++)
         tabuleiro[rand()%11][rand()%11] = 1; //valor do tesouro
 
     
-    //definindo a posição inicial
-    int playerX = 5, playerY = 5;
+    //definindo a posição inicial aleatoria
+    int playerX = (rand()%11);
+    int playerY = (rand()%11);
     tabuleiro[playerX][playerY] = 5;
+   
 
     //sistema de "spoiler" do tabuleiro antes do game começar
     system(CLEAR);
