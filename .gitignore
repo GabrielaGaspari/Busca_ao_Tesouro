@@ -1,0 +1,26 @@
+# --- Executáveis (Binários) ---
+# Ignora o executável do Windows
+*.exe
+# Ignora o executável do Linux (como o nome é 'buscaTesouro', ignoramos o nome dele)
+buscaTesouro
+# Ignora arquivos de debug gerados pelo compilador
+*.out
+*.app
+
+# --- Arquivos de Objeto ---
+# São arquivos temporários gerados durante a compilação
+*.o
+*.obj
+
+# --- Configurações de IDE ---
+# Ignora pastas de configuração do VSCodium/VS Code
+.vscode/
+.history/
+*.log
+
+# --- Arquivos de Sistema (Lixo do SO) ---
+# No Windows (thumbnails)
+Thumbs.db
+# No Linux (arquivos temporários e backups)
+*~
+.DS_Store
